@@ -3,12 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/xampp/htdocs/boteco/admin/conecta.php</file>
             <file>file:/C:/xampp/htdocs/boteco/admin/sidebar_menu.php</file>
             <file>file:/C:/xampp/htdocs/boteco/admin/clientes.php</file>
+            <file>file:/C:/xampp/htdocs/boteco/admin/validar_sessao.php</file>
             <file>file:/C:/xampp/htdocs/boteco/admin/sidebar_menu_2.php</file>
             <file>file:/C:/xampp/htdocs/boteco/admin/sidebar_menu_3.php</file>
+            <file>file:/C:/xampp/htdocs/boteco/admin/sql_edit.php</file>
+            <file>file:/C:/xampp/htdocs/boteco/validarLogin.php</file>
             <file>file:/C:/xampp/htdocs/boteco/admin/admin_page.php</file>
             <file>file:/C:/xampp/htdocs/boteco/admin/cadastrar_dados.php</file>
+            <file>file:/C:/xampp/htdocs/boteco/admin/listar_funcionarios.php</file>
+            <file>file:/C:/xampp/htdocs/boteco/admin/criar_comandas.php</file>
         </group>
     </open-files>
 </project-private>

@@ -10,7 +10,7 @@ if(isset($_POST['valor_produto']))$valor = $_POST['valor_produto'];
 
 //Enviando Dados para mysql
 if(isset($_POST['enviar_comanda'])){
-  $cadastrar = "INSERT INTO pedidos (n_pedido, n_mesa, nome_cliente, quantidade, descricao,valor)  VALUES ('','$mesa','$nome','$qtd','$desc','$valor')";
+  $cadastrar = "INSERT INTO pedidos (id, id_cliente, id_funcionario, id_produto, data, hora, valor, mesa, quantidade)  VALUES ('','$mesa','$nome','$qtd','$desc','$valor')";
   $envia_banco = mysql_query($cadastrar,$conecta) or print(mysql_error());
   echo "<script type='text/javascript'>alert('Pedido Gerado com Sucesso!');
 parent.location = 'criar_comandas.php';
