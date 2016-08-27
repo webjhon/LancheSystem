@@ -6,7 +6,7 @@ $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
 
 
 if (isset($_POST['login_envia'])) {
-    $buscar = "SELECT * FROM lancheria.funcionarios  WHERE funcionarios.login = '$login' and senha = '$senha'";
+    $buscar = "SELECT * FROM jcfood.funcionarios  WHERE funcionarios.login = '$login' and senha = '$senha'";
     $verifica = mysql_query($buscar);
     if (mysql_num_rows($verifica) <= 0) {
     echo "<script>
