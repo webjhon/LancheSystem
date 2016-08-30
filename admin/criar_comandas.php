@@ -44,66 +44,101 @@
         <br>
         <!-- CLASSE PRINCIPAL - CRIAR COMANDA -->
         <div id="criar_nova_comandas">
-            <form class="form-horizontal" action="gerar_pedido.php" method="POST">
-            <fieldset>
+          <form class="form-horizontal" action="gerar_pedido.php" method="POST">
+          <fieldset>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="numero_mesa">Mesa</label>
-                <div class="col-md-2">
-                  <input id="numero_mesa" name="numero_mesa" type="text" placeholder="N°" class="form-control input-md" required="">
+          <!-- Form Name -->
+          <legend><!--ESTE CAMPO FICA ABAIXO DO CADASTRAR PEDIDOS, NO CASO DE NECESSIDADE DE USO--></legend>
 
-                </div>
-              </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="cliente">Cliente</label>
+            <div class="col-md-5">
+            <input id="cliente" name="cliente" placeholder="Digite o Telefone" class="form-control input-md" required="" type="text">
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="nome_cliente">Cliente</label>
-                <div class="col-md-6">
-                  <input id="nome_cliente" name="nome_cliente" type="text" placeholder="Nome" class="form-control input-md" required="">
+            </div>
+          </div>
 
-                </div>
-              </div>
+          <!-- Select Basic -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="funcionario">Funcionário</label>
+            <div class="col-md-5">
+              <select id="funcionario" name="funcionario" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+            </div>
+          </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="quantidade">Quantidade</label>
-                <div class="col-md-6">
-                  <input id="quantidade" name="quantidade" type="text" placeholder="Unidades" class="form-control input-md" required="">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="Produto">Produto</label>
+            <div class="col-md-5">
+            <input id="Produto" name="Produto" placeholder="Pesquisar Produtos" class="form-control input-md" required="" type="text">
 
-                </div>
-              </div>
+            </div>
+          </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="desc_produto">Descrição</label>
-                <div class="col-md-6">
-                  <input id="desc_produto" name="desc_produto" type="text" placeholder="Produto" class="form-control input-md" required="">
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="quantidade">Quantidade</label>
+            <div class="col-md-5">
+            <input id="quantidade" name="quantidade" placeholder="Quantidade" class="form-control input-md" required="" type="text">
 
-                </div>
-              </div>
+            </div>
+          </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="valor_produto">Valor</label>
-                <div class="col-md-6">
-                    <input id="valor_produto" name="valor_produto" type="text" placeholder="R$ " class="form-control input-md" required=""><br>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="valor">Valor</label>
+            <div class="col-md-5">
+            <input id="valor" name="valor" placeholder="Preço R$" class="form-control input-md" required="" type="text">
 
-                </div>
-              </div>
+            </div>
+          </div>
 
-              <!-- Button -->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="enviar_comanda"> Concluir</label>
-                <div class="col-md-4">
-                  <button id="enviar_comanda" name="enviar_comanda" class="btn btn-primary">LANÇAR</button>
-                </div>
-              </div>
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="data">Data</label>
+            <div class="col-md-5">
+            <input id="data" name="data" placeholder="00/00/2000" class="form-control input-md" required="" type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="hora">Hora</label>
+            <div class="col-md-5">
+            <input id="hora" name="hora" placeholder="Hora" class="form-control input-md" required="" type="text">
+
+            </div>
+          </div>
+
+          <!-- Text input-->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="mesa">Mesa</label>
+            <div class="col-md-5">
+            <input id="mesa" name="mesa" placeholder="Mesa/ Telemarketing" class="form-control input-md" required="" type="text">
+
+            </div>
+          </div>
+
+          <!-- Button -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="enviar_comanda">Finalizar</label>
+            <div class="col-md-4">
+              <button id="enviar_comanda" name="enviar_comanda" class="btn btn-primary">Cadastrar Pedido</button>
+            </div>
+          </div>
+
+          </fieldset>
+          </form>
 
             </fieldset>
           </form>
         </div>
-                
+
     </div>
   </div>
 </body>
