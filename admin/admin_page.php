@@ -52,20 +52,20 @@
             echo "<br>";
             echo "<br>";
             require_once './conecta.php';
-            $soma_valor = 'SELECT SUM(pedidos.valor) from lancheria.pedidos';
+            $soma_valor = 'SELECT SUM(valor) from pedido_produto';
             $resultado_valor = mysql_query($soma_valor);
-            $soma_clientes = 'SELECT COUNT(DISTINCT lancheria.pedidos.nome_cliente) from lancheria.pedidos';
+            $soma_clientes = 'SELECT COUNT(DISTINCT id_cliente) from pedido_produto';
             $resultado_clientes = mysql_query($soma_clientes);
-            $soma_mesas = 'SELECT COUNT(DISTINCT lancheria.pedidos.n_mesa) from lancheria.pedidos';
+            $soma_mesas = 'SELECT COUNT(DISTINCT mesa) from pedido_produto';
             $resultado_mesas = mysql_query($soma_mesas);
             while($row = mysql_fetch_array($resultado_valor)){
-              $valor = $row['SUM(pedidos.valor)'];
+              $valor = $row['SUM(valor)'];
             }
             while($row = mysql_fetch_array($resultado_clientes)){
-              $clientes = $row['COUNT(DISTINCT lancheria.pedidos.nome_cliente)'];
+              $clientes = $row['COUNT(DISTINCT id_cliente)'];
             }
             while($row = mysql_fetch_array($resultado_mesas)){
-              $mesas = $row['COUNT(DISTINCT lancheria.pedidos.n_mesa)'];
+              $mesas = $row['COUNT(DISTINCT mesa)'];
             }
             ?>
             <p class="alert alert-info">Dinheiro Pendente: R$ <?php echo $valor ?>,00  <a href="./admin_page.php"class="glyphicon glyphicon-refresh"></a></p>
