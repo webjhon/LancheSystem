@@ -67,15 +67,6 @@
                 </div>
               </div>
 
-              <!-- Text input-->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="cad_login">Nome de Usuário</label>
-                <div class="col-md-6">
-                  <input id="cad_login" name="cad_login" type="text" placeholder="login" class="form-control input-md" required="" autofocus="">
-
-                </div>
-              </div>
-
               <!-- Password input-->
               <div class="form-group">
                 <label class="col-md-4 control-label" for="cad_senha">Senha</label>
@@ -86,12 +77,16 @@
               </div>
 
               <!-- File Button -->
-              <div class="form-group">
-                <label class="col-md-4 control-label" for="cad_foto">Foto</label>
-                <div class="col-md-4">
-                  <input id="cad_foto" name="cad_foto" class="input-file" type="file">
-                </div>
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="foto_botao">Enviar Foto</label>
+            <div class="col-md-4">
+              <input id="foto_estagiario" name="foto_estagiario" type="file">
+              <br>
+              <div class="alert alert-danger" id="img_fail">
+                <strong> Errado! </strong> O arquivo enviado precisa ser .JPG
               </div>
+            </div>
+          </div>
 
               <!-- Button -->
               <div class="form-group">
